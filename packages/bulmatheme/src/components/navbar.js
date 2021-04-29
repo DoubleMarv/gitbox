@@ -5,7 +5,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div>
+      <>
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="https://bulma.io">
@@ -20,44 +20,18 @@ class Navbar extends Component {
         </div>
 
         <div id="navbarBasicExample" className="navbar-menu">
-          <div className="navbar-start">
+          <div className="navbar-end">
             <Link className="navbar-item" link="/">
-              Home is awesome
+              Home
             </Link>
 
             <Link className="navbar-item" link="/about">
-              About Us Updated
+              About
             </Link>
-
-
-            <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">
-                More
-              </a>
-
-              <div className="navbar-dropdown">
-                <a className="navbar-item">
-                  About
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="buttons">
-                <a className="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a className="button is-light">
-                  Log in
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </nav>
-      </div>
+      </>
     );
   }
 
